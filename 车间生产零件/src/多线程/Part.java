@@ -13,7 +13,6 @@ public class Part implements Runnable {
      * 在run（）在并发情况下存在的问题是：
      * 假如part=1，进入while循环，但是part还没减为0，其它进程也进入了while循环
      * 用lock控制退出
-     * @return
      */
     public synchronized boolean lock(){
            part--;
