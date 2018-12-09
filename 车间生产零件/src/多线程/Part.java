@@ -1,6 +1,7 @@
 package 多线程;
 
 public class Part implements Runnable {
+    //共享资源
     int part=10000;
     //各个工厂的计数器
     int sun1=0;
