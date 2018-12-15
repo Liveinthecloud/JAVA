@@ -11,7 +11,7 @@ public class Example {
         byte [] buf=new byte[1024];
         while(true){
             //定义DatagramSocket对象，监听的端号9888
-            DatagramSocket ds=new DatagramSocket(9888);
+            DatagramSocket ds=new DatagramSocket(8888);
             //定义DatagramPacket对象，用于接收数据
             DatagramPacket dp=new DatagramPacket(buf,1024);
             System.out.println("等待接收数据！");
