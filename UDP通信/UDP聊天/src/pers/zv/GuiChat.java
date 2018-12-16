@@ -171,13 +171,6 @@ public class GuiChat extends JFrame{
         }.start();
     }
     public static void main(String[] Q_Q){
-        for(int i=0;i<2;i++){
-            new Thread(new Runnable() {
-                @Override
-                public void run() {
-                    GuiChat guiChat=new GuiChat();
-                }
-            }).start();
-        }
+        GuiChat guiChat=new GuiChat();
     }
 }

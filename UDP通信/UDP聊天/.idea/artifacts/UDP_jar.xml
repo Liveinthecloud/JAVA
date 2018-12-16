@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="UDP聊天:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/UDP_jar</output-path>
+    <root id="archive" name="UDP聊天.jar">
+      <element id="module-output" name="UDP聊天" />
+    </root>
+  </artifact>
+</component>
