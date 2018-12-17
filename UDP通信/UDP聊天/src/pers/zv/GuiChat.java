@@ -15,7 +15,6 @@ import java.net.DatagramSocket;
 
 public class GuiChat extends JFrame{
     private static int DEFAULT_PORT=8888;
-    private Integer key = 0;
     private JLabel stateLB;                     //显示监听状态
     private JTextArea centerTextArea;           //显示聊天记录
     private JPanel southPanel;                  //最下面的面板
@@ -54,11 +53,7 @@ public class GuiChat extends JFrame{
         inputTextArea.setBackground(new Color(255,106,106));
         bottomPanel=new JPanel(new FlowLayout(FlowLayout.CENTER,5,5));
         ipTextField=new JTextField("127.0.0.1",10);
-        synchronized (key){
-            DEFAULT_PORT++;
-        }
         remotePortTF=new JTextField(String.valueOf(DEFAULT_PORT),8);
-        DEFAULT_PORT++;
         sendBT=new JButton("发送");
         clearBT=new JButton("清屏");
         bottomPanel.add(ipTextField);
