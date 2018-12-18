@@ -37,8 +37,8 @@ public class GuiChat extends JFrame{
         //窗口初始化
         this.setTitle("GUI聊天");
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        this.setSize(400,400);
-        this.setResizable(false);       //窗口大小不可调
+        this.setSize(500,400);
+        this.setResizable(true);       //窗口大小不可调
         this.setLocationRelativeTo(null);//居中窗口
         //窗口的上半部分
         stateLB=new JLabel("当前还未启动监听");
@@ -46,21 +46,33 @@ public class GuiChat extends JFrame{
         //窗口中间聊天记录部分
         centerTextArea=new JTextArea();         //聊天显示区域
         centerTextArea.setEnabled(false);       //不可改
-        centerTextArea.setBackground(new Color(255,106,106));
+        centerTextArea.setFont(new Font("宋体", 1, 10));//显示字体
+        centerTextArea.setBackground(new Color(0,191,255));
         //窗口底部部分
-        southPanel=new JPanel(new BorderLayout());
+        southPanel=new JPanel(new BorderLayout());          //设置布局模式
         inputTextArea=new JTextArea(5,20);      //输入区域
-        inputTextArea.setBackground(new Color(255,106,106));
-        bottomPanel=new JPanel(new FlowLayout(FlowLayout.CENTER,5,5));
-        ipTextField=new JTextField("127.0.0.1",10);
+        inputTextArea.setBackground(new Color(0,191,255));
+        bottomPanel=new JPanel(new FlowLayout(FlowLayout.CENTER,10,5));//控件之间的距离和距离上下的距离
+        ipTextField=new JTextField("127.0.0.1",10);         //默认pi地址
         remotePortTF=new JTextField(String.valueOf(DEFAULT_PORT),8);
-        sendBT=new JButton("发送");
-        clearBT=new JButton("清屏");
+        ImageIcon icon=new ImageIcon("image\\send.png");
+        sendBT=new JButton(icon);
+        sendBT.setContentAreaFilled(false);  //对JButton透明的设置
+        sendBT.setBorderPainted(false);       //对JButton去掉按钮的边框的设置
+        sendBT.setBorder(BorderFactory.createRaisedSoftBevelBorder());//凸起来的按钮
+        //sendBT.setFont(new Font("华文行楷", 1, 15));
+        sendBT.setBackground(new Color(0,191,255));
+
+
+        ImageIcon icon1=new ImageIcon("image\\q.png");
+        clearBT=new JButton(icon1);
+        clearBT.setContentAreaFilled(false);
+        clearBT.setBorderPainted(false);
         bottomPanel.add(ipTextField);
         bottomPanel.add(remotePortTF);
         bottomPanel.add(sendBT);
         bottomPanel.add(clearBT);
-        southPanel.add(new JScrollPane(inputTextArea),BorderLayout.CENTER);
+        southPanel.add(new JScrollPane(inputTextArea),BorderLayout.CENTER);//输入框滑条模式
         southPanel.add(bottomPanel,BorderLayout.SOUTH);
         //添加窗口的部分的组件
         this.add(stateLB,BorderLayout.NORTH);
