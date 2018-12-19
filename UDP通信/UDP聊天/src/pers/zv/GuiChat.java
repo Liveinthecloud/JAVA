@@ -53,8 +53,10 @@ public class GuiChat extends JFrame{
         inputTextArea=new JTextArea(5,20);      //输入区域
         inputTextArea.setBackground(new Color(0,191,255));
         bottomPanel=new JPanel(new FlowLayout(FlowLayout.CENTER,10,5));//控件之间的距离和距离上下的距离
-        ipTextField=new JTextField("127.0.0.1",10);         //默认pi地址
+        ipTextField=new JTextField("127.0.0.1",10);//默认pi地址
+        ipTextField.setBackground(new Color(0,191,255));
         remotePortTF=new JTextField(String.valueOf(DEFAULT_PORT),8);
+        remotePortTF.setBackground(new Color(0,191,255));
         ImageIcon icon=new ImageIcon("image\\send.png");
         sendBT=new JButton(icon);
         sendBT.setContentAreaFilled(false);  //对JButton透明的设置
