@@ -8,6 +8,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import java.net.*;
 import java.io.IOException;
 import java.net.DatagramPacket;
@@ -84,6 +86,17 @@ public class GuiChat extends JFrame{
     }
     private void setListener(){
         //为sendBT按钮添加事件监听器
+        sendBT.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseEntered(MouseEvent e) {
+                sendBT.setIcon(new ImageIcon("image\\send1.png"));
+            }
+
+            @Override
+            public void mouseExited(MouseEvent e) {
+                sendBT.setIcon(new ImageIcon("image\\send.png"));
+            }
+        });
         sendBT.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -120,6 +133,18 @@ public class GuiChat extends JFrame{
             }
         });
         //为clearBT按键添加事件
+        clearBT.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseEntered(MouseEvent e) {
+                clearBT.setIcon(new ImageIcon("image\\q1.png"));
+            }
+
+            @Override
+            public void mouseExited(MouseEvent e) {
+                clearBT.setIcon(new ImageIcon("image\\q.png"));
+
+            }
+        });
         clearBT.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
