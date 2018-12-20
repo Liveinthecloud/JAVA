@@ -37,16 +37,18 @@ import java.awt.*;
  * UIManager.setLookAndFeel("com.sun.java.swing.plaf.windows.WindowsLookAndFeel");
  */
 public class MyButton extends JButton {
-
     private ImageIcon icon;
+    public MyButton(){
+        super();
+    }
     public MyButton(String filename){
         super();
         String imageName="image\\"+filename;
         icon =new ImageIcon(imageName);
         this.setIcon(icon);         //设置图片背景
         this.setBorderPainted(false);//去掉Button的边框
-        //this.setContentAreaFilled(false);//透明
-        this.setPreferredSize(new Dimension(300,100));//设置尺寸
+        this.setContentAreaFilled(false);//透明
+        this.setPreferredSize(new Dimension(60,60));//设置尺寸
         this.setBorder(BorderFactory.createRaisedBevelBorder());//设置凸起来的按钮
     }
 }
