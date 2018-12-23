@@ -13,39 +13,39 @@
     <session id="-2010356948">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.2" value="2" />
-          <entry key="project.open.time.5" value="2" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.open.time.5" value="3" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="ObjectStream" value="1" />
           <entry key="class" value="1" />
-          <entry key="java" value="14" />
+          <entry key="java" value="18" />
           <entry key="png" value="5" />
-          <entry key="txt" value="11" />
+          <entry key="txt" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="1" />
           <entry key="Image" value="5" />
-          <entry key="JAVA" value="14" />
-          <entry key="PLAIN_TEXT" value="12" />
+          <entry key="JAVA" value="18" />
+          <entry key="PLAIN_TEXT" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="23" />
-          <entry key="java" value="3502" />
+          <entry key="java" value="4781" />
           <entry key="txt" value="89" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3502" />
+          <entry key="JAVA" value="4781" />
           <entry key="PLAIN_TEXT" value="112" />
         </counts>
       </usages-collector>
@@ -53,14 +53,80 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/缓冲区/Buffer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="27">
-              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            <state relative-caret-position="243">
+              <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/标准输入输出流/Test2.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="18" column="68" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="68" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/其他IO流/Piped_Stream.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="945">
+              <caret line="35" column="26" lean-forward="true" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/其他IO流/Sequence_Stream.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="604">
+              <caret line="25" column="10" lean-forward="true" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Resources/TXT/(合并流)test.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Resources/TXT/test.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="5" selection-start-column="5" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Resources/TXT/test1.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="16" selection-start-column="16" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Resources/TXT/重定向输出.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="20" lean-forward="true" selection-start-column="20" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -95,12 +161,15 @@
         <option value="$PROJECT_DIR$/src/其他IO流/Data_Stream.java" />
         <option value="$PROJECT_DIR$/src/其他IO流/Object_Stream.java" />
         <option value="$PROJECT_DIR$/src/其他IO流/Println_Stream.java" />
+        <option value="$PROJECT_DIR$/src/其他IO流/Piped_Stream.java" />
+        <option value="$PROJECT_DIR$/src/标准输入输出流/Test2.java" />
+        <option value="$PROJECT_DIR$/src/其他IO流/Sequence_Stream.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="156" />
-    <option name="y" value="46" />
+    <option name="x" value="139" />
+    <option name="y" value="48" />
     <option name="width" value="1702" />
     <option name="height" value="936" />
   </component>
@@ -109,7 +178,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -139,18 +207,12 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="其他IO流" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="IO(输入输出流)" type="b2602c69:ProjectViewProjectNode" />
-              <item name="IO(输入输出流)" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="其他IO流" type="462c0819:PsiDirectoryNode" />
-              <item name="Object_Stream.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="RunDashboard">
@@ -165,7 +227,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Println_Stream">
+  <component name="RunManager" selected="Application.Sequence_Stream">
     <configuration name="Data_Stream" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="其他IO流.Data_Stream" />
       <module name="IO(输入输出流)" />
@@ -173,8 +235,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Object_Stream" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="其他IO流.Object_Stream" />
+    <configuration name="Piped_Stream" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="其他IO流.Piped_Stream" />
       <module name="IO(输入输出流)" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -187,34 +249,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="转换流.Test1" />
+    <configuration name="Sequence_Stream" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="其他IO流.Sequence_Stream" />
       <module name="IO(输入输出流)" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestReaderWriter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="字符流.TestReaderWriter" />
+    <configuration name="Test2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="标准输入输出流.Test2" />
       <module name="IO(输入输出流)" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.TestReaderWriter" />
-      <item itemvalue="Application.Test1" />
-      <item itemvalue="Application.Object_Stream" />
       <item itemvalue="Application.Data_Stream" />
       <item itemvalue="Application.Println_Stream" />
+      <item itemvalue="Application.Test2" />
+      <item itemvalue="Application.Piped_Stream" />
+      <item itemvalue="Application.Sequence_Stream" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Sequence_Stream" />
+        <item itemvalue="Application.Piped_Stream" />
+        <item itemvalue="Application.Test2" />
         <item itemvalue="Application.Println_Stream" />
         <item itemvalue="Application.Data_Stream" />
-        <item itemvalue="Application.Object_Stream" />
-        <item itemvalue="Application.Test1" />
-        <item itemvalue="Application.TestReaderWriter" />
       </list>
     </recent_temporary>
   </component>
@@ -228,14 +290,14 @@
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.335141" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4981971" weight="0.23210412" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="9" weight="0.3275488" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50180286" side_tool="true" weight="0.38528678" />
+      <window_info anchor="bottom" id="Messages" order="9" sideWeight="0.49939904" weight="0.32668328" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -291,20 +353,6 @@
     <entry file="file://$PROJECT_DIR$/Resources/Image/Writer.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Resources/TXT/test.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="44" lean-forward="true" selection-start-column="44" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Resources/TXT/test1.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Resources/TXT/test(输出).txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -314,16 +362,10 @@
     <entry file="file://$PROJECT_DIR$/Resources/Image/复制InputStream.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Resources/TXT/testbuffer(输出).txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/字节流/TestFileputStream.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="8" column="61" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -344,17 +386,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Resources/TXT/ObjectStream">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Resources/TXT/ObjectStream" />
     <entry file="file://$PROJECT_DIR$/out/production/IO(输入输出流)/其他IO流/Object_Stream.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#1194#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Resources/TXT/PrintStream.txt">
       <provider selected="true" editor-type-id="text-editor" />
@@ -381,9 +415,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="351">
           <caret line="13" column="39" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -398,16 +429,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="58" column="37" selection-start-line="58" selection-start-column="37" selection-end-line="58" selection-end-column="37" />
-          <folding>
-            <element signature="e#493#494#0" expanded="true" />
-            <element signature="e#519#520#0" expanded="true" />
-            <element signature="e#547#548#0" expanded="true" />
-            <element signature="e#571#572#0" expanded="true" />
-            <element signature="e#597#598#0" expanded="true" />
-            <element signature="e#622#623#0" expanded="true" />
-            <element signature="e#1487#1488#0" expanded="true" />
-            <element signature="e#1514#1515#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -434,11 +455,73 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/缓冲区/Buffer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        <state relative-caret-position="243">
+          <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Resources/TXT/testbuffer(输出).txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.base/java/lang/StringBuffer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="147" column="7" selection-start-line="147" selection-start-column="7" selection-end-line="147" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Resources/TXT/重定向输出.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="20" lean-forward="true" selection-start-column="20" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/其他IO流/Piped_Stream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="945">
+          <caret line="35" column="26" lean-forward="true" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/标准输入输出流/Test2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="18" column="68" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="68" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Resources/TXT/test1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="16" selection-start-column="16" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Resources/TXT/test.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" selection-start-column="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Resources/TXT/(合并流)test.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/其他IO流/Sequence_Stream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="604">
+          <caret line="25" column="10" lean-forward="true" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
         </state>
       </provider>
     </entry>

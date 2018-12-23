@@ -3,6 +3,7 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/Resources/TXT/ObjectStream.txt" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Resources/TXT/test.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Resources/TXT/重定向输出.txt" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/字符流/TestReaderWriter.java" charset="UTF-8" />
   </component>
 </project>
