@@ -3,7 +3,7 @@ package 其他IO流;
 import java.io.*;
 
 /**
- * 只需要存储成员数据的时候可以用
+ * 有时候并不需要存储整个对象，只需要存储成员数据的时候可以用
  */
 public class Data_Stream {
     public static void main(String[] arge) throws IOException {

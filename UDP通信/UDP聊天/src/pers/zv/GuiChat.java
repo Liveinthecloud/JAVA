@@ -84,21 +84,23 @@ public class GuiChat extends JFrame{
         this.add(southPanel,BorderLayout.SOUTH);
         this.setVisible(true);
     }
+    //设置监听事件
     private void setListener(){
         //为sendBT按钮添加事件监听器
         sendBT.addMouseListener(new MouseAdapter() {
             @Override
-            public void mouseEntered(MouseEvent e) {
-                sendBT.setIcon(new ImageIcon("image\\send1.png"));
-            }
+            //进入发送按键调用send1.png
+            public void mouseEntered(MouseEvent e) { sendBT.setIcon(new ImageIcon("image\\send1.png")); }
 
             @Override
+            //退出发送按键调用send.png
             public void mouseExited(MouseEvent e) {
                 sendBT.setIcon(new ImageIcon("image\\send.png"));
             }
         });
         sendBT.addActionListener(new ActionListener() {
             @Override
+            //单机发送按键
             public void actionPerformed(ActionEvent e) {
                 //获取发送的目标IP和端号
                 final String ipAddress=ipTextField.getText();
@@ -115,17 +117,17 @@ public class GuiChat extends JFrame{
                 }
                 //获取需要发送的消息
                 String sendContent=inputTextArea.getText();
-                byte [] buffer=sendContent.getBytes();
+                byte [] bufferSendMessage=sendContent.getBytes();//转换成字节数组
                 try{
                     //将发送的内容显示在自己的聊天记录
                     centerTextArea.append("我对"+ipAddress+":"+remotePort+"说:\n"+
                             inputTextArea.getText()+"\n\n");
                     //添加内容后，使滚动条自动滚动到最底部
                     centerTextArea.setCaretPosition(centerTextArea.getText().length());
-                    //发送
-                    datagramSocket.send(new DatagramPacket(buffer,buffer.length, InetAddress.getByName(ipAddress),Integer
+                    //发送  创建一个数据包，添加数据到指定Ip的指定端口
+                    datagramSocket.send(new DatagramPacket(bufferSendMessage,bufferSendMessage.length, InetAddress.getByName(ipAddress),Integer
                     .parseInt(remotePort)));
-                    inputTextArea.setText("");
+                    inputTextArea.setText("");      //聊天框重置为空
                 }catch (IOException e1){
                     JOptionPane.showMessageDialog(GuiChat.this,"错误，发送不成功！");
                     e1.printStackTrace();
@@ -135,16 +137,13 @@ public class GuiChat extends JFrame{
         //为clearBT按键添加事件
         clearBT.addMouseListener(new MouseAdapter() {
             @Override
-            public void mouseEntered(MouseEvent e) {
-                clearBT.setIcon(new ImageIcon("image\\q1.png"));
-            }
-
+            //进人清除按键
+            public void mouseEntered(MouseEvent e) { clearBT.setIcon(new ImageIcon("image\\q1.png")); }
+            //退出清除按键
             @Override
-            public void mouseExited(MouseEvent e) {
-                clearBT.setIcon(new ImageIcon("image\\q.png"));
-
-            }
+            public void mouseExited(MouseEvent e) { clearBT.setIcon(new ImageIcon("image\\q.png")); }
         });
+        //单击事件
         clearBT.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -160,14 +159,14 @@ public class GuiChat extends JFrame{
                 if(datagramSocket!=null&&!datagramSocket.isClosed())
                     datagramSocket.close();
                 try{//判断端口号是否在1~65535
-                    port=Integer.parseInt(JOptionPane.showInputDialog(this,"请输入端口号",
+                    port=Integer.parseInt(JOptionPane.showInputDialog(this,"请输入端口号",//获取输入的监听端口
                             "端口号",JOptionPane.QUESTION_MESSAGE));
                     if(port<1||port>65535)
                         throw new RuntimeException("端口号超出范围");
 
                 }catch (Exception e){
                     JOptionPane.showMessageDialog(null,"你输入的端口不正确，请输入1~65535之间");
-                    continue;
+                    continue;       //如果输入监听端口错误，在从while进入
                 }
                 //启动DatagramSocket
                 datagramSocket=new DatagramSocket(port);
@@ -196,7 +195,7 @@ public class GuiChat extends JFrame{
                         centerTextArea.append(p.getAddress().getHostAddress()+
                                 ":"+((InetSocketAddress)p.getSocketAddress()).getPort()+
                                 "对我说：\n"+new String(p.getData(),0,p.getLength())+"\n\n");
-                        centerTextArea.setCaretPosition(centerTextArea.getText().length());
+                        centerTextArea.setCaretPosition(centerTextArea.getText().length());//向下滚动
                     }catch (IOException e){
                         e.printStackTrace();
                     }
