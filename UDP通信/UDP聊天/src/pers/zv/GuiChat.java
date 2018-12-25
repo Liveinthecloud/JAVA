@@ -49,11 +49,11 @@ public class GuiChat extends JFrame{
         centerTextArea=new JTextArea();         //聊天显示区域
         centerTextArea.setEnabled(false);       //不可改
         centerTextArea.setFont(new Font("宋体", 1, 10));//显示字体
-        centerTextArea.setBackground(new Color(0,191,255));
+        centerTextArea.setBackground(new Color(255,255,255));
         //窗口底部部分
         southPanel=new JPanel(new BorderLayout());          //设置布局模式
         inputTextArea=new JTextArea(5,20);      //输入区域
-        inputTextArea.setBackground(new Color(0,191,255));
+        inputTextArea.setBackground(new Color(255,255,255));
         bottomPanel=new JPanel(new FlowLayout(FlowLayout.CENTER,10,5));//控件之间的距离和距离上下的距离
         ipTextField=new JTextField("127.0.0.1",10);//默认pi地址
         ipTextField.setBackground(new Color(0,191,255));
