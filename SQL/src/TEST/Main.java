@@ -22,14 +22,17 @@ public class Main {
             Connection conn=DriverManager.getConnection(dbURL,Name,Pwd);
             System.out.println("连接数据库成功");
             sql=conn.createStatement();
-            rs=sql.executeQuery("select * from Sheet1$");
+            rs=sql.executeQuery("select * from 长安");
            while (rs.next()){
-               System.out.print(rs.getString(1)+"      ");
-               System.out.print(rs.getString(2)+"      ");
-               System.out.print(rs.getString(3)+"      ");
-               System.out.print(rs.getString(4)+"      ");
-               System.out.print(rs.getString(5)+"      ");
-               System.out.print(rs.getString(6)+"      ");
+               System.out.print(rs.getString(1).replace(" ", ""));
+               System.out.print("\t\t"+rs.getString(2).replace(" ", "")+"\t\t");
+               System.out.print("\t\t"+rs.getString(3).replace(" ", ""+"\t\t"));
+               System.out.print("\t\t"+rs.getString(4).replace(" ", "")+"\t\t");
+               //System.out.print(rs.getString(2)+"      ");
+               //System.out.print(rs.getString(3)+"      ");
+               //System.out.print(rs.getString(4)+"      ");
+               //System.out.print(rs.getString(5)+"      ");
+               //System.out.print(rs.getString(6)+"      ");
                System.out.println();
            }
 

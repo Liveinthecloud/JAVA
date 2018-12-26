@@ -1,4 +1,6 @@
-package 实验数据库;
+package pers.zv;
+
+
 
 import java.sql.*;
 import javax.swing.*;
@@ -7,8 +9,7 @@ import java.awt.event.*;
 import java.awt.Color;
 
 public class LLogin {
-
-    public static void main(String[] args) {
+    public static void main(String[] arge){
         new loginFrame();
     }
 }
@@ -23,7 +24,8 @@ class loginFrame extends JFrame implements ActionListener{
     JPanel panel1,panel2;
     loginFrame(){
         setBackground(Color.orange);
-        tubiao=new JLabel(new ImageIcon("image\\1.jpg "));  //图片在原有基础上要调整大小
+        tubiao=new JLabel(new ImageIcon("image\\1.png "));  //图片在原有基础上要调整大小
+        //tubiao.setBackground(new Color(140,255,251));
         this.add(tubiao,BorderLayout.NORTH);
         userName=new JLabel("账号",JLabel.CENTER);
         userPwd=new JLabel("密码",JLabel.CENTER);
@@ -32,7 +34,8 @@ class loginFrame extends JFrame implements ActionListener{
         panel1=new JPanel();
         panel2=new JPanel();
         choose=new JTabbedPane();
-        choose.add("登录界面",panel1);
+        choose.add("登录",panel1);
+        panel1.setBackground(new Color(140,255,251));
         panel1.setLayout(new GridLayout(2,2));
         panel1.add(userName);panel1.add(nameField);
         panel1.add(userPwd);panel1.add(pwdField);
@@ -46,7 +49,7 @@ class loginFrame extends JFrame implements ActionListener{
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
         setBounds(400,150,550,400);
-        setTitle("学生信息管理系统");
+        setTitle("聊天小程序");
         validate();
     }
 
@@ -78,15 +81,11 @@ class loginFrame extends JFrame implements ActionListener{
             boolean key=false;
             while(rs.next()){
                 key=true;
-                System.out.println(rs.getString(1));
-                System.out.println(rs.getString(2));
-
-
             }
             if(key){
                 JOptionPane.showMessageDialog(this, "登陆成功！","消息对话框",JOptionPane.WARNING_MESSAGE);
                 this.dispose();
-                //new CommFrame();
+                new GuiChat();
 
             }
             else

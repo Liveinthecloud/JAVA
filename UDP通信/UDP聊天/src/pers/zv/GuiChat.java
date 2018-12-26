@@ -26,6 +26,7 @@ public class GuiChat extends JFrame{
     private JPanel bottomPanel;                 //放置IP输入框，按钮等
     private JButton sendBT;                     //发送按钮
     private JButton clearBT;                    //清除聊天记录按钮
+    private  JButton nextBT;                    //在加个聊天窗口
     private DatagramSocket datagramSocket;      //功能实现
 
     //构造函数
@@ -37,9 +38,9 @@ public class GuiChat extends JFrame{
     //实现用户窗口
     private void setUpUI(){
         //窗口初始化
-        this.setTitle("GUI聊天");
+        this.setTitle("聊天");
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        this.setSize(500,400);
+        this.setSize(550,400);
         this.setResizable(true);       //窗口大小不可调
         this.setLocationRelativeTo(null);//居中窗口
         //窗口的上半部分
@@ -72,10 +73,13 @@ public class GuiChat extends JFrame{
         clearBT=new JButton(icon1);
         clearBT.setContentAreaFilled(false);
         clearBT.setBorderPainted(false);
+
+        nextBT=new JButton("New one");
         bottomPanel.add(ipTextField);
         bottomPanel.add(remotePortTF);
         bottomPanel.add(sendBT);
         bottomPanel.add(clearBT);
+        bottomPanel.add(nextBT);
         southPanel.add(new JScrollPane(inputTextArea),BorderLayout.CENTER);//输入框滑条模式
         southPanel.add(bottomPanel,BorderLayout.SOUTH);
         //添加窗口的部分的组件
@@ -150,6 +154,12 @@ public class GuiChat extends JFrame{
                 centerTextArea.setText("");
             }
         });
+        nextBT.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new GuiChat();
+            }
+        });
     }
     //DatagramSocket的监听
     private void initSocket(){
@@ -203,7 +213,5 @@ public class GuiChat extends JFrame{
             }
         }.start();
     }
-    public static void main(String[] Q_Q){
-        GuiChat guiChat=new GuiChat();
-    }
+
 }
