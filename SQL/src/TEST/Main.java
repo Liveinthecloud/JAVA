@@ -22,12 +22,12 @@ public class Main {
             Connection conn=DriverManager.getConnection(dbURL,Name,Pwd);
             System.out.println("连接数据库成功");
             sql=conn.createStatement();
-            rs=sql.executeQuery("select * from 长安");
+            rs=sql.executeQuery("select * from 长安 where 标题 like '%手动%' ");
            while (rs.next()){
-               System.out.print(rs.getString(1).replace(" ", ""));
-               System.out.print("\t\t"+rs.getString(2).replace(" ", "")+"\t\t");
-               System.out.print("\t\t"+rs.getString(3).replace(" ", ""+"\t\t"));
-               System.out.print("\t\t"+rs.getString(4).replace(" ", "")+"\t\t");
+               System.out.print(rs.getString(1)+"\t");
+               System.out.print(rs.getString(2)+"\t");
+               System.out.print(rs.getString(3)+"\t");
+               System.out.print(rs.getString(4)+"\t");
                //System.out.print(rs.getString(2)+"      ");
                //System.out.print(rs.getString(3)+"      ");
                //System.out.print(rs.getString(4)+"      ");
