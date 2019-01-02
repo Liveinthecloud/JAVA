@@ -1,7 +1,6 @@
 package pers.zv;
 
 /**
- * @author zengwei
  * @date 2018/9/28 0028-上午 8:24
  */
 import javax.swing.*;
@@ -27,7 +26,7 @@ public class GuiChat extends JFrame{
     private JButton sendBT;                     //发送按钮
     private JButton clearBT;                    //清除聊天记录按钮
     private  JButton nextBT;                    //在加个聊天窗口
-    private DatagramSocket datagramSocket;      //功能实现
+    private DatagramSocket datagramSocket;     //功能实现
 
     //构造函数
     public GuiChat(){
@@ -106,21 +105,26 @@ public class GuiChat extends JFrame{
             @Override
             //单机发送按键
             public void actionPerformed(ActionEvent e) {
-                //获取发送的目标IP和端号
-                final String ipAddress=ipTextField.getText();
-                final String remotePort=remotePortTF.getText();
+
+                final String ipAddress=ipTextField.getText();//获取发送的目标IP
+                final String remotePort=remotePortTF.getText();//获取发送的目标端号
+
                 //判断IP和Port是否为空
                 if(ipAddress==null||ipAddress.trim().equals("")||           //trim():去掉字符串首尾的空格。
                 remotePort==null||remotePort.trim().equals("")){
-                    JOptionPane.showMessageDialog(GuiChat.this,"请输入IP地址和端口号");
+                    JOptionPane.showMessageDialog(GuiChat.this,"请输入IP地址和端口号");//ip或端口错误弹出提醒框
                     return;
                 }
                 if(datagramSocket==null||datagramSocket.isClosed()){
                     JOptionPane.showMessageDialog(GuiChat.this,"监听不成功");
                     return;
                 }
-                //获取需要发送的消息
-                String sendContent=inputTextArea.getText();
+                String sendContent=inputTextArea.getText(); //获取需要发送的消息
+                //如果发送消息为空，弹出提醒
+                if(sendContent.equals("")){
+                    JOptionPane.showMessageDialog(GuiChat.this,"发送信息为空");
+                    return;
+                }
                 byte [] bufferSendMessage=sendContent.getBytes();//转换成字节数组
                 try{
                     //将发送的内容显示在自己的聊天记录
@@ -152,8 +156,9 @@ public class GuiChat extends JFrame{
             @Override
             public void actionPerformed(ActionEvent e) {
                 centerTextArea.setText("");
-            }
+            }//清除聊天记录框
         });
+        //添加一个新的对话框
         nextBT.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -190,7 +195,7 @@ public class GuiChat extends JFrame{
             }
         }
     }
-    //startListen
+    //开启一个线程接收发送来的信息
     private void startListen(){
         new Thread(){
             private DatagramPacket p;

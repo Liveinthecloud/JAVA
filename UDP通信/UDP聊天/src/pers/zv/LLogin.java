@@ -75,9 +75,9 @@ class loginFrame extends JFrame implements ActionListener{
 
             userName="sa";
             userPwd="123456789";
-            con=DriverManager.getConnection(url,userName,userPwd);
+            con=DriverManager.getConnection(url,userName,userPwd);//尝试建立与给定数据库URL的连接。 抛出SQLException
             sql=con.createStatement();
-            rs=sql.executeQuery("select * from login where name ='"+name+"' and pwd='"+pwd+"'");//对应自己数据库建的表填写
+            rs=sql.executeQuery("select * from login where name ='"+name+"' and pwd='"+pwd+"'");//SQL语句：对应自己数据库建的表填写
             boolean key=false;
             while(rs.next()){
                 key=true;
