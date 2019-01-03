@@ -3,16 +3,16 @@ package pers.zv;
 /**
  * @date 2018/9/28 0028-上午 8:24
  */
-import javax.swing.*;
-import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
-import java.net.*;
-import java.io.IOException;
-import java.net.DatagramPacket;
-import java.net.DatagramSocket;
+        import javax.swing.*;
+        import java.awt.*;
+        import java.awt.event.ActionEvent;
+        import java.awt.event.ActionListener;
+        import java.awt.event.MouseAdapter;
+        import java.awt.event.MouseEvent;
+        import java.net.*;
+        import java.io.IOException;
+        import java.net.DatagramPacket;
+        import java.net.DatagramSocket;
 
 public class GuiChat extends JFrame{
     private static int DEFAULT_PORT=8888;
@@ -111,7 +111,7 @@ public class GuiChat extends JFrame{
 
                 //判断IP和Port是否为空
                 if(ipAddress==null||ipAddress.trim().equals("")||           //trim():去掉字符串首尾的空格。
-                remotePort==null||remotePort.trim().equals("")){
+                        remotePort==null||remotePort.trim().equals("")){
                     JOptionPane.showMessageDialog(GuiChat.this,"请输入IP地址和端口号");//ip或端口错误弹出提醒框
                     return;
                 }
@@ -134,7 +134,7 @@ public class GuiChat extends JFrame{
                     centerTextArea.setCaretPosition(centerTextArea.getText().length());
                     //发送  创建一个数据包，添加数据到指定Ip的指定端口
                     datagramSocket.send(new DatagramPacket(bufferSendMessage,bufferSendMessage.length, InetAddress.getByName(ipAddress),Integer
-                    .parseInt(remotePort)));
+                            .parseInt(remotePort)));
                     inputTextArea.setText("");      //聊天框重置为空
                 }catch (IOException e1){
                     JOptionPane.showMessageDialog(GuiChat.this,"错误，发送不成功！");
