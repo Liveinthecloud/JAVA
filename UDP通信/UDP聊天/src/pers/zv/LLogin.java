@@ -15,7 +15,6 @@ public class LLogin {
 }
 
 class loginFrame extends JFrame implements ActionListener{
-    Box box1,box2,baseBox;
     JLabel userName,userPwd,tubiao;
     JTextField nameField;
     JPasswordField pwdField;
@@ -47,7 +46,7 @@ class loginFrame extends JFrame implements ActionListener{
         ImageIcon tubiao=new ImageIcon("图片路径");
         setIconImage(tubiao.getImage());
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setVisible(true);
+        setVisible(true);       //窗口可见
         setBounds(400,150,550,400);
         setTitle("聊天小程序");
         validate();
@@ -73,8 +72,8 @@ class loginFrame extends JFrame implements ActionListener{
             // 连接数据库的语句
             url="jdbc:sqlserver://127.0.0.1;DatabaseName=Student";
 
-            userName="sa";
-            userPwd="123456789";
+            userName="sa";              //数据库登陆名
+            userPwd="123456789";        //密码
             con=DriverManager.getConnection(url,userName,userPwd);//尝试建立与给定数据库URL的连接。 抛出SQLException
             sql=con.createStatement();
             rs=sql.executeQuery("select * from login where name ='"+name+"' and pwd='"+pwd+"'");//SQL语句：对应自己数据库建的表填写
