@@ -68,7 +68,7 @@ class loginFrame extends JFrame implements ActionListener{
             ResultSet rs;
             String url,userName,userPwd;
             // 连接数据库的语句
-            url="jdbc:sqlserver://14.109.110.123:1433;DatabaseName=Student";
+            url="jdbc:sqlserver://127.0.0.1:1433;DatabaseName=Student";
 
             userName="sa";
             userPwd="123456789";
