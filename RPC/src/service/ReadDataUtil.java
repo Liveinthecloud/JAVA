@@ -1,6 +1,6 @@
 package service;
 
-import demo.Product;
+import testRPC.Product;
 
 import java.io.InputStream;
 import java.io.ObjectInputStream;
@@ -25,9 +25,8 @@ public class ReadDataUtil {
 						//方法的名字
 						String name = method.getName();
 						if(name.equals("findProductById")) {
-							Socket sc = new Socket("127.0.0.1", 3456);
+							Socket sc = new Socket("127.0.0.1", 10000);
 							OutputStream out = sc.getOutputStream();
-							out.write(("SELECT * FROM p.dat WHERE id="+args[0]).getBytes());
 							InputStream in = sc.getInputStream();
 							ObjectInputStream ois = new ObjectInputStream(in);
 							Product p = (Product) ois.readObject();
@@ -37,7 +36,7 @@ public class ReadDataUtil {
 							sc.close();
 							return p;
 						}else {
-							Socket sc = new Socket("192.168.10.130", 3306);
+							Socket sc = new Socket("127.0.0.1", 10000);
 							OutputStream out = sc.getOutputStream();
 							out.write(("SELECT * FROM p.dat WHERE name like "+args[0]).getBytes());
 							InputStream in = sc.getInputStream();

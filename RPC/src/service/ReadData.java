@@ -1,7 +1,7 @@
 package service;
 
 import java.util.List;
-import demo.Product;
+import testRPC.Product;
 
 
 public interface ReadData {

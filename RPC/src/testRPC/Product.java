@@ -1,4 +1,4 @@
-package demo;
+package testRPC;
 
 import java.io.Serializable;
 
