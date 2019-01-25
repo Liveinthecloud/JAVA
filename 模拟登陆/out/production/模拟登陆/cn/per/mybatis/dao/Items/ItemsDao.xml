@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.per.mybatis.dao.Items.ItemsDao">
+   <select id="findItemsByNamePrice" parameterType="items" resultMap="itemsMap">
+select * from items
+
+<where>
+ <include refid="items_query"/>
+</where>
+   </select>
+
+    <sql id="items_query">
+        <if test="itemsName!=null and itemsName!=''">
+            and items_name like '%${itemsName}%'
+        </if>
+        <if test="price!=null and price!=''">
+            and price =#{price}
+        </if>
+        <if test="itemsId!=null and itemsId!=''">
+            and items_id=#{itemsId}
+        </if>
+    </sql>
+
+    <resultMap id="itemsMap" type="items">
+        <id property="itemsId" column="items_id"/>
+        <result property="itemsName" column="items_name"/>
+        <result property="price" column="price"/>
+
+    </resultMap>
+    <delete id="deleteItems" parameterType="cn.per.mybatis.vo.ItemsVo">
+        delete from items
+        <where>
+            <foreach collection="ids" open="items_id in(" close=")" item="id" separator=",">
+            #{id}
+            </foreach>
+        </where>
+    </delete>
+</mapper>

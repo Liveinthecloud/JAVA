@@ -18,6 +18,7 @@
         </environment>
     </environments>
     <mappers>
-        <mapper resource="user.xml"/>
+        <mapper resource="Model\user.xml"/>
+        <mapper resource="dao\UserDao.xml"/>
     </mappers>
 </configuration>
