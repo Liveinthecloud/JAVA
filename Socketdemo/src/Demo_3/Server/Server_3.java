@@ -16,8 +16,8 @@ public class Server_3 {
         while (true) {
             Socket sc = ss.accept();
             System.out.println("获取连接成功：");
-            InputStream in = sc.getInputStream();
-            OutputStream out = sc.getOutputStream();
+            InputStream in = sc.getInputStream();//获取输入流
+            OutputStream out = sc.getOutputStream();//获取输出流
             //接收消息
             byte[] data = new byte[1024];
             int num=in.read(data);

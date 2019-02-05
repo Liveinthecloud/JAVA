@@ -10,7 +10,7 @@ import java.net.Socket;
 public class Client {
     public static void main(String[] arge) throws IOException {
         //连接端口
-        int port=10000;
+        int port=4563;
         String IP="127.0.0.1";
         Socket socket = new Socket(IP, port);
         InputStream inputStream = socket.getInputStream();
