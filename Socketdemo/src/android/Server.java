@@ -20,7 +20,9 @@ public class Server
 
         //启动一个socket服务端，注册端口
         ss = new ServerSocket(10000);
+        //接收套字节
         sc=ss.accept();
+        //获取输入流
         in = sc.getInputStream();
         byte[] data = new byte[1024];
         int num;
