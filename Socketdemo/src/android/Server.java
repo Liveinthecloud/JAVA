@@ -24,6 +24,7 @@ public class Server
         sc=ss.accept();
         //获取输入流
         in = sc.getInputStream();
+        //缓冲区
         byte[] data = new byte[1024];
         int num;
         while (flag){
