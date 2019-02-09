@@ -28,6 +28,7 @@ public class Server
         byte[] data = new byte[1024];
         int num;
         while (flag){
+            //读取字节
            num= in.read(data);
            System.out.println(new String(data,0,num));
         }
