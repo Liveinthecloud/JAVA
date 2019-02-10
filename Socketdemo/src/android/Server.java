@@ -32,6 +32,7 @@ public class Server
            num= in.read(data);
            System.out.println(new String(data,0,num));
         }
+        //关闭流
         in.close();
         sc.close();
         ss.close();
