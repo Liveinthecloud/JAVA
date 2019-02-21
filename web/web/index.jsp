@@ -34,6 +34,7 @@
   <%--在方法类--%>
   <% System.out.println("java 代码块");
       out.println("hello");
+      //取
     String str=(String)session.getAttribute("user");
     out.println(str);
   %>

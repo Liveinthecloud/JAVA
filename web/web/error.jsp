@@ -16,7 +16,7 @@ error page<br>
  异常：<br>
  <%=exception.getMessage()%>
  <%
-
+//设置
      session.setAttribute("user","zhang san");
  %>
 
