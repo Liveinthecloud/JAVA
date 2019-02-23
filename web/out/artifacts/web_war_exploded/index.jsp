@@ -15,11 +15,13 @@
     <title>Hello Tomcat</title>
   </head>
   <body style="background: aqua">
-  now = <%= new Date() %>
+  时间： = <%= new Date() %>
   <br>
   <%
+  //显示日期
   SimpleDateFormat sdf=new SimpleDateFormat("yyyy-mm-dd-hh-mm-ss");
   Date now=new Date();
+  //输出到页面中
   out.println("now= "+sdf.format(now));
  /* int a=8 ,b=0;
   a=a/b;*/
@@ -32,6 +34,7 @@
   <%--在方法类--%>
   <% System.out.println("java 代码块");
       out.println("hello");
+      //取
     String str=(String)session.getAttribute("user");
     out.println(str);
   %>

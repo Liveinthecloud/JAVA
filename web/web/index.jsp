@@ -15,7 +15,7 @@
     <title>Hello Tomcat</title>
   </head>
   <body style="background: aqua">
-  now = <%= new Date() %>
+  时间： = <%= new Date() %>
   <br>
   <%
   //显示日期
