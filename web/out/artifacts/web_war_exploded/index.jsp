@@ -65,6 +65,9 @@
       <td> 96</td>
       <td> 99</td>
     </tr>
+    <tr>
+      <td></td>
+    </tr>
   </table>
   </body>
 </html>
