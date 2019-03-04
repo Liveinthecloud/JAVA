@@ -22,7 +22,6 @@
       height: 100%;
     }
     body {
-      background: "aili.jpg";
       font-family: "Helvetica Neue", "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB", "Microsoft Yahei", sans-serif;
       letter-spacing: 1.2px;
       margin: 0;
@@ -129,8 +128,7 @@
   </style>
 
 </head>
-
-<body background="aili.jpg">
+<body >
 <canvas class="canvas" width="1820" height="905"></canvas>
 
 
