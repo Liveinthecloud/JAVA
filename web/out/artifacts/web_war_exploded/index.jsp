@@ -175,7 +175,7 @@
                 window.oRequestAnimationFrame ||
                 window.msRequestAnimationFrame ||
                 function (callback) {
-                    window.setTimeout(callback, 1000 / 60);
+                    window.setTimeout(callback, 10000 / 60);
                 };
         return {
             init: function (el) {
