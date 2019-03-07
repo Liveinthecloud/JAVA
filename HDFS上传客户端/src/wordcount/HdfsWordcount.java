@@ -13,6 +13,7 @@ import java.util.Set;
 
 public class HdfsWordcount {
     public static void main(String[] arge) throws Exception {
+
         /*初始化*/
         Properties propers = new Properties();
         propers.load(HdfsWordcount.class.getClassLoader().getResourceAsStream("job.properties"));
@@ -33,7 +34,9 @@ public class HdfsWordcount {
             LocatedFileStatus file = iterator.next();
             in = fs.open(file.getPath());
             buf = new BufferedReader(new InputStreamReader(in));
+
             //去hdfs中读文件：一次读一行
+
             String line=null;
             while ((line=buf.readLine())!=null){
                 System.out.println(line);
@@ -44,6 +47,8 @@ public class HdfsWordcount {
         }
         /*
         * 输出结果
+        *
+        *
         * */
         HashMap<Object, Object> contextMap = context.getContextMap();
         FSDataOutputStream out = fs.create(new Path(output_path,new Path("res.dat")));
