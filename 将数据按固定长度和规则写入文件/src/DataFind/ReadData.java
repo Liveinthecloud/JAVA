@@ -22,7 +22,7 @@ public class ReadData {
         //跳到指定位置
         r.seek(pos);
 
-        
+
         //读取数据
         int id=r.readInt();//返回4个字节
         byte[] bytes = new byte[20];
