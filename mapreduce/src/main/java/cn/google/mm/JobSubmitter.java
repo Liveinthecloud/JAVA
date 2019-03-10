@@ -61,12 +61,12 @@ public class JobSubmitter {
         }
 
         // 4、封装参数：本次job要处理的输入数据集所在路径、最终结果的输出路径
-        FileInputFormat.setInputPaths(job, new Path("/wordcount/input"));
+        FileInputFormat.setInputPaths(job, new Path("hdfs://master:9000/wordcount/input"));
         FileOutputFormat.setOutputPath(job, output);  // 注意：输出路径必须不存在
 
 
         // 5、封装参数：想要启动的reduce task的数量
-        job.setNumReduceTasks(2);
+        job.setNumReduceTasks(1);
 
         // 6、提交job给yarn
         boolean res = job.waitForCompletion(true);
