@@ -27,9 +27,8 @@ public class Server
         //缓冲区
         byte[] data = new byte[1024];
         int num;
-        while (flag){
-            //读取字节
-           num= in.read(data);
+        //读取字节
+        while ((num= in.read(data))!=-1){
            System.out.println(new String(data,0,num));
         }
         //关闭流
