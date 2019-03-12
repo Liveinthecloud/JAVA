@@ -34,7 +34,8 @@ public class JobSubmitter {
         conf.set("yarn.resourcemanager.hostname", "master");
         // 3、如果要从windows系统上运行这个job提交客户端程序，则需要加这个跨平台提交的参数
         conf.set("mapreduce.app-submission.cross-platform","true");
-
+        conf.set("mapreduce.map.memory.mb","1024");
+        conf.set("mapreduce.reduce.memory.mb","1024");
         Job job = Job.getInstance(conf);
 
         // 1、封装参数：jar包所在的位置
@@ -66,7 +67,7 @@ public class JobSubmitter {
 
 
         // 5、封装参数：想要启动的reduce task的数量
-        job.setNumReduceTasks(1);
+        job.setNumReduceTasks(2);
 
         // 6、提交job给yarn
         boolean res = job.waitForCompletion(true);
