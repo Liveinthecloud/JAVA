@@ -1,4 +1,4 @@
-package cn.google.mm;
+package per.zengwei.mm;
 
 import java.net.URI;
 
