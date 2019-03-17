@@ -1,4 +1,4 @@
-package per.zengwei.Order;
+package per.zengwei.Order.Order_1;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
@@ -44,6 +44,8 @@ public class OrderTopn {
             }
             //对OrderBean排序 比中金额
             Collections.sort(beanList);
+
+
             for(int i=0;i<top;i++){
                 context.write(beanList.get(i),NullWritable.get());
             }
@@ -55,7 +57,6 @@ public class OrderTopn {
         //要获取的数据个数
         conf.setInt("order.top.n",2);
         Job job = Job.getInstance(conf);
-
 
         job.setJarByClass(OrderTopn.class);
         job.setMapperClass(OrderTopnMapper.class);

@@ -1,4 +1,4 @@
-package per.zengwei.Order;
+package per.zengwei.Order.Order_1;
 
 import org.apache.hadoop.io.Writable;
 import org.apache.hadoop.io.WritableComparable;

@@ -16,7 +16,9 @@ public class JobSubmitter {
         job.setMapperClass(FlowCountMapper.class);
         job.setReducerClass(FlowCountReducer.class);
 
+
         job.setPartitionerClass(ProvincePartitioner.class);
+
         job.setMapOutputKeyClass(Text.class);
         job.setMapOutputValueClass(FlowBean.class);
         job.setOutputKeyClass(Text.class);
