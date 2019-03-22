@@ -1,10 +1,8 @@
-package cn.hadoop.zookeeper;
+package cn.hadoop.zookeeper.TestDemo;
 
 import org.apache.zookeeper.WatchedEvent;
 import org.apache.zookeeper.Watcher;
 import org.apache.zookeeper.ZooKeeper;
-
-import java.io.IOException;
 
 public class MyWatcher implements Watcher {
     public void process(WatchedEvent event) {

@@ -1,10 +1,10 @@
-package cn.hadoop.zookeeper;
+package cn.hadoop.zookeeper.TestDemo;
 
+import org.apache.zookeeper.Watcher;
 import org.apache.zookeeper.ZooKeeper;
 
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
@@ -12,6 +12,12 @@ import java.util.Properties;
 public class ZookeeperUtil {
     private static volatile ZooKeeper zooKeeper;
     private static Properties properties;
+
+    private ZookeeperUtil (){}
+    private ZookeeperUtil(Watcher watcher){
+        zooKeeper.register(watcher);
+    }
+
     static{
         properties = new Properties();
         try {
@@ -22,8 +28,6 @@ public class ZookeeperUtil {
             e.printStackTrace();
         }
     }
-
-    private ZookeeperUtil (){}
 
     public static ZooKeeper getZookeeper() throws IOException {
          if(zooKeeper==null){

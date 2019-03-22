@@ -1,4 +1,4 @@
-package cn.hadoop.zookeeper;
+package cn.hadoop.zookeeper.TestDemo;
 
 import org.apache.zookeeper.KeeperException;
 import org.apache.zookeeper.ZooKeeper;
