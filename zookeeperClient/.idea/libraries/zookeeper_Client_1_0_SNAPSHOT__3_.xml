@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="zookeeper-Client-1.0-SNAPSHOT (3)">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/main/java/cn/hadoop/zookeeper/TestDemo/zookeeper-Client-1.0-SNAPSHOT.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/src/main/java/cn/hadoop/zookeeper/TestDemo/zookeeper-Client-1.0-SNAPSHOT.jar!/" />
+    </SOURCES>
+  </library>
+</component>

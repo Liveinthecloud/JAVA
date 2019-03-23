@@ -18,22 +18,22 @@ public class ZookeeperUtil {
         zooKeeper.register(watcher);
     }
 
-    static{
+    /*static{
         properties = new Properties();
         try {
-            FileInputStream in = new FileInputStream("Zookeeper.properties");
+           // FileInputStream in = new FileInputStream("Zookeeper.properties");
             properties.load(in);
             in.close();
         } catch (Exception e) {
             e.printStackTrace();
         }
-    }
+    }*/
 
     public static ZooKeeper getZookeeper() throws IOException {
          if(zooKeeper==null){
              synchronized (ZookeeperUtil.class){
                  if(zooKeeper==null){
-                     zooKeeper = new ZooKeeper(properties.getProperty("connect"),Integer.parseInt(properties.getProperty("sessionTimeout")), null);
+                     zooKeeper = new ZooKeeper("master:2181,node1:2181,node2:2181",2000, null);
                  }
              }
          }

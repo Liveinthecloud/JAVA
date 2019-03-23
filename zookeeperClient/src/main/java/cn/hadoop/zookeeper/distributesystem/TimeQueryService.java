@@ -6,7 +6,7 @@ import java.io.OutputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.Date;
-
+/*模拟服务器业务*/
 public class TimeQueryService extends Thread{
     private int port;
     public TimeQueryService(int port){
@@ -27,4 +27,5 @@ public class TimeQueryService extends Thread{
             e.printStackTrace();
         }
     }
+    
 }
