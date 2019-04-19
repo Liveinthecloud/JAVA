@@ -69,14 +69,15 @@
     <session id="1923137686">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="14" />
+          <entry key="project.closed" value="15" />
           <entry key="project.open.time.10" value="5" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.22" value="1" />
+          <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.8" value="5" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="14" />
+          <entry key="project.opened" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -125,7 +126,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-5832">
+            <state relative-caret-position="1971">
               <caret line="177" column="52" selection-start-line="177" selection-start-column="52" selection-end-line="177" selection-end-column="52" />
             </state>
           </provider>
@@ -193,17 +194,17 @@
     <option name="skipTests" value="true" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="339" />
-    <option name="y" value="150" />
-    <option name="width" value="1470" />
-    <option name="height" value="767" />
+    <option name="x" value="150" />
+    <option name="y" value="116" />
+    <option name="width" value="1617" />
+    <option name="height" value="881" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -230,7 +231,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -239,6 +240,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550398697566" />
     <property name="database.console.LAST_STATE" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -365,11 +367,12 @@
       <workItem from="1551442820562" duration="4952000" />
       <workItem from="1551542315694" duration="22000" />
       <workItem from="1551711545518" duration="1037000" />
+      <workItem from="1554768477808" duration="784000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20634000" />
+    <option name="totallyTimeSpent" value="21418000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -381,9 +384,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="339" y="150" width="1470" height="767" extended-state="0" />
+    <frame x="150" y="116" width="1617" height="881" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49605057" visible="true" weight="0.20141844" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49605057" visible="true" weight="0.1849711" />
       <window_info id="Structure" order="1" sideWeight="0.50394946" side_tool="true" weight="0.15806195" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -393,17 +396,17 @@
       <window_info id="Web" order="7" sideWeight="0.5046584" side_tool="true" weight="0.30196938" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49781182" weight="0.12954186" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49781182" weight="0.8862115" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32" />
-      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32968238" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32968238" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3191153" />
+      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.328594" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.328594" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5021882" side_tool="true" weight="0.3286334" />
       <window_info anchor="bottom" id="Messages" order="10" />
-      <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.328594" />
-      <window_info anchor="bottom" id="Database Changes" order="12" weight="0.328594" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.5845182" />
+      <window_info anchor="bottom" id="Database Changes" order="12" weight="0.52606636" />
       <window_info anchor="bottom" id="Version Control" order="13" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Console" order="14" weight="0.329718" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -457,7 +460,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5832">
+        <state relative-caret-position="1971">
           <caret line="177" column="52" selection-start-line="177" selection-start-column="52" selection-end-line="177" selection-end-column="52" />
         </state>
       </provider>
