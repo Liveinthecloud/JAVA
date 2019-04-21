@@ -1,0 +1,12 @@
+<configuration>
+    <!--保存份数-->
+    <property>
+        <name>dfs.replication</name>
+        <value>2</value>
+    </property>
+
+    <property>
+        <name>dfs.blocksize</name>
+        <value>128m</value>
+    </property>
+</configuration>
