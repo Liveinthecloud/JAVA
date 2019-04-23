@@ -39,12 +39,12 @@ public class JobSubmitter {
         
         Job job = Job.getInstance(conf);
         // 1、封装参数：jar包所在的位置
-        job.setJar("f:/wc.jar");
-        //job.setJarByClass(JobSubmitter.class);
+        job.setJar("i:/wordcount.jar");
+        //job.setJarByClass(per.zengwei.mm.JobSubmitter.class);
 
         // 2、封装参数： 本次job所要调用的Mapper实现类、Reducer实现类
-        job.setMapperClass(WordcountMapper.class);
-        job.setReducerClass(WordcountReducer.class);
+        job.setMapperClass(per.zengwei.mm.WordcountMapper.class);
+        job.setReducerClass(per.zengwei.mm.WordcountReducer.class);
 
         // 3、封装参数：本次job的Mapper实现类、Reducer实现类产生的结果数据的key、value类型
         job.setMapOutputKeyClass(Text.class);
