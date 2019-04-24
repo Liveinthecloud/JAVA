@@ -52,17 +52,17 @@ public class JobSubmitter {
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(IntWritable.class);
         // 4、暴力删除存在的目录
-        Path output = new Path("/wordcount/output");
+        Path output = new Path("/wordcount/output_1");
         FileSystem fs = FileSystem.get(new URI("hdfs://master:9000"),conf,"root");
         if(fs.exists(output)){
             fs.delete(output, true);
         }
         // 5、封装参数：本次job要处理的输入数据集所在路径、最终结果的输出路径
-        FileInputFormat.setInputPaths(job, new Path("hdfs://master:9000/wordcount/input"));
+        FileInputFormat.setInputPaths(job, new Path("hdfs://master:9000/wordcount/output"));
         FileOutputFormat.setOutputPath(job, output);  // 注意：输出路径必须不存在
 
         // 6、封装参数：想要启动的reduce task的数量
-        job.setNumReduceTasks(2);
+        job.setNumReduceTasks(1);
 
         // 7、提交job给yarn
         boolean res = job.waitForCompletion(true);

@@ -14,7 +14,7 @@ public class PageTopnReduce extends Reducer<Text, IntWritable,Text,IntWritable> 
     TreeMap<PageCount,Object> treeMap=new TreeMap<PageCount, Object>();
     @Override
     protected void reduce(Text key, Iterable<IntWritable> values, Context context) throws IOException, InterruptedException {
-        PageCount pageCount;
+        PageCount pageCount=null;
         int count=0;
         for (IntWritable value:values
              ) {
