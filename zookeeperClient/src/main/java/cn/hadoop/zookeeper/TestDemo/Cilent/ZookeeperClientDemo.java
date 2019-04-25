@@ -1,5 +1,6 @@
-package cn.hadoop.zookeeper.TestDemo;
+package cn.hadoop.zookeeper.TestDemo.Cilent;
 
+import cn.hadoop.zookeeper.TestDemo.Util.ZookeeperUtil;
 import org.apache.zookeeper.CreateMode;
 import org.apache.zookeeper.KeeperException;
 import org.apache.zookeeper.ZooDefs;
@@ -22,7 +23,7 @@ public class ZookeeperClientDemo {
     /*创建*/
     @Test
     public void Create() throws IOException, KeeperException, InterruptedException {
-        String create = zooKeeper.create("/idea/test1", "hello wrold".getBytes(), ZooDefs.Ids.OPEN_ACL_UNSAFE, CreateMode.PERSISTENT);
+        String create = zooKeeper.create("/idea/test9", "hello wrold".getBytes(), ZooDefs.Ids.OPEN_ACL_UNSAFE, CreateMode.PERSISTENT);
         System.out.println(create);
         zooKeeper.close();
 
@@ -30,14 +31,15 @@ public class ZookeeperClientDemo {
     @Test
     /*修改*/
     public void Updata() throws KeeperException, InterruptedException, UnsupportedEncodingException {
-        Stat stat = zooKeeper.setData("/idea", "你好啊".getBytes("UTF-8"), -1);
+        Stat stat = zooKeeper.setData("/idea/test5", "你好5555565".getBytes("UTF-8"), -1);
+        System.out.println(stat.toString());
         zooKeeper.close();
     }
 
     /*查询*/
     @Test
     public void Getdata() throws KeeperException, InterruptedException, UnsupportedEncodingException {
-        byte[] data = zooKeeper.getData("/idea/test", true, null);
+        byte[] data = zooKeeper.getData("/idea/test1", true, null);
         System.out.println(new String(data,"UTF-8"));
         zooKeeper.close();
     }
@@ -54,7 +56,7 @@ public class ZookeeperClientDemo {
     /*删除节点*/
     @Test
     public void Rmovedata() throws KeeperException, InterruptedException {
-        zooKeeper.delete("/idea/test",-1);
+        zooKeeper.delete("/idea/test0",-1);
         zooKeeper.close();
 
 

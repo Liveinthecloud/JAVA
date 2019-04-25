@@ -25,7 +25,7 @@ public class ReduceSideJoin {
         JoinBean bean = new JoinBean();
         Text k = new Text();
         /*maptask在处理时，会先调用一次setup*/
-
+        /*这个方法只调用一次*/
         @Override
         protected void setup(Context context) throws IOException, InterruptedException {
             //获取读取到的文件的名字,避免每一行都去get文件名

@@ -1,10 +1,9 @@
-package cn.hadoop.zookeeper.TestDemo;
+package cn.hadoop.zookeeper.TestDemo.Util;
 
 import org.apache.zookeeper.Watcher;
 import org.apache.zookeeper.ZooKeeper;
 
 
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 

@@ -1,6 +1,6 @@
 package cn.hadoop.zookeeper.distributesystem;
 
-import cn.hadoop.zookeeper.TestDemo.ZookeeperUtil;
+import cn.hadoop.zookeeper.TestDemo.Util.ZookeeperUtil;
 import org.apache.zookeeper.KeeperException;
 import org.apache.zookeeper.WatchedEvent;
 import org.apache.zookeeper.Watcher;
