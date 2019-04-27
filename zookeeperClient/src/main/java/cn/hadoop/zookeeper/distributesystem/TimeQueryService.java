@@ -22,6 +22,10 @@ public class TimeQueryService extends Thread{
                 InputStream in = accept.getInputStream();
                 OutputStream out = accept.getOutputStream();
                 out.write(new Date().toString().getBytes());
+                byte[] data=new byte[256];
+                int read = in.read(data);
+                System.out.println(new String(data,0,read));
+
             }
         } catch (IOException e) {
             e.printStackTrace();

@@ -6,18 +6,24 @@ import org.apache.zookeeper.KeeperException;
 import org.apache.zookeeper.ZooDefs;
 import org.apache.zookeeper.ZooKeeper;
 import org.apache.zookeeper.data.Stat;
+import org.junit.Test;
 
 import java.io.IOException;
 
+/**
+ * 模拟服务器上线
+ */
 public class TimeQueryServer {
+
     ZooKeeper zookeeper = ZookeeperUtil.getZookeeper();
     public TimeQueryServer() throws IOException {
     }
     public static void main(String[] arge) throws IOException, KeeperException, InterruptedException {
         TimeQueryServer timeQueryServer = new TimeQueryServer();
         timeQueryServer.registerServerTnfo(arge[0], arge[1]);
-        new TimeQueryService(Integer.parseInt(arge[1])).start();
+        new TimeQueryService(Integer.parseInt(arge[1])).start();//启动模拟任务
     }
+    @Test
     //注册服务器信息
     public void registerServerTnfo(String hostname, String port) throws KeeperException, InterruptedException {
         //判断主节点是否存在

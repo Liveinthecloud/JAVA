@@ -16,7 +16,7 @@
     </SUITE>
   </component>
   <component name="CoverageViewManager">
-    <option name="myElementSize" value="252" />
+    <option name="myElementSize" value="321" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -33,8 +33,7 @@
     <select />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="ErrorTreeViewConfiguration">
     <option name="hideWarnings" value="true" />
@@ -48,8 +47,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/cn/hadoop/zookeeper/TestDemo/WatchNode/ZookeeperWatchDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1">
-              <caret column="47" lean-forward="true" selection-start-column="47" selection-end-column="47" />
+            <state>
+              <caret column="47" selection-start-column="47" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -60,7 +59,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/cn/hadoop/zookeeper/TestDemo/Cilent/ZookeeperClientDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-103">
+            <state relative-caret-position="594">
               <caret line="33" column="59" selection-start-line="33" selection-start-column="59" selection-end-line="33" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -69,11 +68,49 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/cn/hadoop/zookeeper/TestDemo/WatchNode/MyWatcher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="29" column="73" selection-start-line="29" selection-start-column="73" selection-end-line="29" selection-end-column="73" />
+            <state relative-caret-position="594">
+              <caret line="25" column="69" selection-start-line="25" selection-start-column="69" selection-end-line="25" selection-end-column="69" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/hadoop/zookeeper/distributesystem/TimeQueryServer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="269">
+              <caret line="26" column="13" lean-forward="true" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#TimeQueryServer#0;class#TimeQueryServer#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/hadoop/zookeeper/distributesystem/Consumer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="327">
+              <caret line="56" column="14" selection-start-line="56" selection-start-column="14" selection-end-line="56" selection-end-column="14" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#637#645#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/hadoop/zookeeper/distributesystem/TimeQueryService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="580">
+              <caret line="25" column="41" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -98,9 +135,6 @@
         <option value="$PROJECT_DIR$/src/main/java/cn/hadoop/zookeeper/ZookeeperUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/hadoop/zookeeper/MyWatcher.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/hadoop/zookeeper/ZookeeperWatchDemo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/hadoop/zookeeper/distributesystem/TimeQueryService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/hadoop/zookeeper/distributesystem/Consumer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/hadoop/zookeeper/distributesystem/TimeQueryServer.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/hadoop/zookeeper/TestDemo/ZookeeperUtil.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/cn/hadoop/zookeeper/TestDemo/Util/ZookeeperUtil.java" />
@@ -108,6 +142,9 @@
         <option value="$PROJECT_DIR$/src/main/java/cn/hadoop/zookeeper/TestDemo/WatchNode/ZookeeperWatchDemo.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/hadoop/zookeeper/TestDemo/Cilent/ZookeeperClientDemo.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/hadoop/zookeeper/TestDemo/WatchNode/MyWatcher.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/hadoop/zookeeper/distributesystem/TimeQueryServer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/hadoop/zookeeper/distributesystem/TimeQueryService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/hadoop/zookeeper/distributesystem/Consumer.java" />
       </list>
     </option>
   </component>
@@ -145,10 +182,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="144" />
-    <option name="y" value="51" />
-    <option name="width" value="1789" />
-    <option name="height" value="916" />
+    <option name="x" value="78" />
+    <option name="y" value="37" />
+    <option name="width" value="1702" />
+    <option name="height" value="931" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -175,97 +212,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="zookeeperClient" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zookeeperClient" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zookeeperClient" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zookeeperClient" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zookeeperClient" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zookeeperClient" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zookeeperClient" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zookeeperClient" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zookeeperClient" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zookeeperClient" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="zookeeper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zookeeperClient" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zookeeperClient" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="zookeeper" type="462c0819:PsiDirectoryNode" />
-              <item name="distributesystem" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zookeeperClient" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zookeeperClient" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="zookeeper" type="462c0819:PsiDirectoryNode" />
-              <item name="TestDemo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zookeeperClient" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zookeeperClient" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="zookeeper" type="462c0819:PsiDirectoryNode" />
-              <item name="TestDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="Cilent" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zookeeperClient" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zookeeperClient" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="zookeeper" type="462c0819:PsiDirectoryNode" />
-              <item name="TestDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="WatchNode" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="zookeeperClient" type="58d84e3e:PackageViewProjectNode" />
-              <item name="zookeeperClient" type="616d4139:PackageViewModuleNode" />
-            </path>
-            <path>
-              <item name="zookeeperClient" type="58d84e3e:PackageViewProjectNode" />
-              <item name="zookeeperClient" type="616d4139:PackageViewModuleNode" />
-              <item name="cn.hadoop.zookeeper" type="1f31426a:PackageElementNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -339,6 +285,68 @@
           <select />
         </subPane>
       </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="zookeeperClient" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zookeeperClient" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zookeeperClient" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zookeeperClient" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zookeeperClient" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zookeeperClient" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zookeeperClient" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zookeeperClient" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zookeeperClient" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zookeeperClient" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="zookeeper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zookeeperClient" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zookeeperClient" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="zookeeper" type="462c0819:PsiDirectoryNode" />
+              <item name="distributesystem" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="zookeeperClient" type="58d84e3e:PackageViewProjectNode" />
+              <item name="zookeeperClient" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="zookeeperClient" type="58d84e3e:PackageViewProjectNode" />
+              <item name="zookeeperClient" type="616d4139:PackageViewModuleNode" />
+              <item name="cn.hadoop.zookeeper" type="1f31426a:PackageElementNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -352,7 +360,8 @@
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.21034482" />
-    <property name="settings.editor.selected.configurable" value="background.image.plus" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -375,66 +384,61 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ZookeeperClientDemo.Updata">
-    <configuration name="ZookeeperClientDemo.Create" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.Consumer">
+    <configuration name="Consumer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.hadoop.zookeeper.distributesystem.Consumer" />
       <module name="zookeeper-Client" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cn.hadoop.zookeeper.TestDemo.WatchNode.*" />
+          <option name="PATTERN" value="cn.hadoop.zookeeper.distributesystem.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="cn.hadoop.zookeeper.TestDemo.Cilent" />
-      <option name="MAIN_CLASS_NAME" value="cn.hadoop.zookeeper.TestDemo.Cilent.ZookeeperClientDemo" />
-      <option name="METHOD_NAME" value="Create" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TimeQueryServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.hadoop.zookeeper.distributesystem.TimeQueryServer" />
+      <module name="zookeeper-Client" />
+      <option name="PROGRAM_PARAMETERS" value="127.0.0.1 45623" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.hadoop.zookeeper.distributesystem.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Consumer.getOnlineServers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="zookeeper-Client" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.hadoop.zookeeper.distributesystem.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.hadoop.zookeeper.distributesystem" />
+      <option name="MAIN_CLASS_NAME" value="cn.hadoop.zookeeper.distributesystem.Consumer" />
+      <option name="METHOD_NAME" value="getOnlineServers" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ZookeeperClientDemo.Rmovedata" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TimeQueryServer.registerServerTnfo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="zookeeper-Client" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cn.hadoop.zookeeper.TestDemo.Cilent.*" />
+          <option name="PATTERN" value="cn.hadoop.zookeeper.distributesystem.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="cn.hadoop.zookeeper.TestDemo.Cilent" />
-      <option name="MAIN_CLASS_NAME" value="cn.hadoop.zookeeper.TestDemo.Cilent.ZookeeperClientDemo" />
-      <option name="METHOD_NAME" value="Rmovedata" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ZookeeperClientDemo.Updata" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="zookeeper-Client" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cn.hadoop.zookeeper.TestDemo.Cilent.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="cn.hadoop.zookeeper.TestDemo.Cilent" />
-      <option name="MAIN_CLASS_NAME" value="cn.hadoop.zookeeper.TestDemo.Cilent.ZookeeperClientDemo" />
-      <option name="METHOD_NAME" value="Updata" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ZookeeperWatchDemo.GetChildrenWatch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="zookeeper-Client" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cn.hadoop.zookeeper.TestDemo.WatchNode.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="cn.hadoop.zookeeper.TestDemo.WatchNode" />
-      <option name="MAIN_CLASS_NAME" value="cn.hadoop.zookeeper.TestDemo.WatchNode.ZookeeperWatchDemo" />
-      <option name="METHOD_NAME" value="GetChildrenWatch" />
+      <option name="PACKAGE_NAME" value="cn.hadoop.zookeeper.distributesystem" />
+      <option name="MAIN_CLASS_NAME" value="cn.hadoop.zookeeper.distributesystem.TimeQueryServer" />
+      <option name="METHOD_NAME" value="registerServerTnfo" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -456,13 +460,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.TimeQueryServer" />
+      <item itemvalue="Application.Consumer" />
+      <item itemvalue="JUnit.ZookeeperWatchDemo.GetWatch" />
+      <item itemvalue="JUnit.TimeQueryServer.registerServerTnfo" />
+      <item itemvalue="JUnit.Consumer.getOnlineServers" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ZookeeperClientDemo.Updata" />
-        <item itemvalue="JUnit.ZookeeperWatchDemo.GetWatch" />
-        <item itemvalue="JUnit.ZookeeperClientDemo.Create" />
-        <item itemvalue="JUnit.ZookeeperWatchDemo.GetChildrenWatch" />
-        <item itemvalue="JUnit.ZookeeperClientDemo.Rmovedata" />
+        <item itemvalue="Application.Consumer" />
+        <item itemvalue="JUnit.Consumer.getOnlineServers" />
+        <item itemvalue="Application.TimeQueryServer" />
+        <item itemvalue="Application.TimeQueryServer" />
+        <item itemvalue="JUnit.TimeQueryServer.registerServerTnfo" />
       </list>
     </recent_temporary>
   </component>
@@ -485,16 +496,13 @@
       <workItem from="1553330960637" duration="10590000" />
       <workItem from="1553823678013" duration="110000" />
       <workItem from="1556191277996" duration="7113000" />
+      <workItem from="1556328290002" duration="1342000" />
+      <workItem from="1556331268784" duration="3571000" />
+      <workItem from="1556344008374" duration="1660000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ZookeeperClientDemo_Updata - 2019.04.25 at 21h 15m 55s.xml">
-      <configuration name="ZookeeperClientDemo.Updata" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ZookeeperClientDemo_Updata - 2019.04.25 at 21h 16m 16s.xml">
-      <configuration name="ZookeeperClientDemo.Updata" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ZookeeperClientDemo_Updata - 2019.04.25 at 21h 16m 33s.xml">
       <configuration name="ZookeeperClientDemo.Updata" configurationId="JUnit" />
     </history-entry>
@@ -519,9 +527,15 @@
     <history-entry file="ZookeeperWatchDemo_GetWatch - 2019.04.25 at 21h 21m 27s.xml">
       <configuration name="ZookeeperWatchDemo.GetWatch" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TimeQueryServer_registerServerTnfo - 2019.04.27 at 10h 41m 28s.xml">
+      <configuration name="TimeQueryServer.registerServerTnfo" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Consumer_getOnlineServers - 2019.04.27 at 11h 20m 00s.xml">
+      <configuration name="Consumer.getOnlineServers" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47955000" />
+    <option name="totallyTimeSpent" value="54528000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -533,20 +547,19 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="144" y="51" width="1789" height="916" extended-state="0" />
+    <frame x="78" y="37" width="1702" height="931" extended-state="0" />
     <layout>
-      <window_info id="Learn" />
       <window_info id="Image Layers" order="0" />
       <window_info id="Designer" order="1" />
       <window_info id="UI Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Structure" order="4" sideWeight="0.6224299" side_tool="true" weight="0.21746674" />
       <window_info id="Favorites" order="5" sideWeight="0.62284195" side_tool="true" weight="0.21746674" />
-      <window_info active="true" content_ui="combo" id="Project" order="6" sideWeight="0.3775701" visible="true" weight="0.21746674" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" sideWeight="0.3775701" visible="true" weight="0.19123021" />
+      <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.26257953" weight="0.4201788" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.26257953" weight="0.34649122" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39974457" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -555,7 +568,7 @@
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="9" weight="0.32736573" />
       <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.7374205" side_tool="true" weight="0.35038364" />
-      <window_info anchor="right" id="Maven" weight="0.32967034" />
+      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="1" weight="0.25" />
       <window_info anchor="right" id="Palette" order="2" />
@@ -564,9 +577,10 @@
       <window_info anchor="right" id="Database" order="5" weight="0.32967034" />
       <window_info anchor="right" id="Theme Preview" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Coverage" order="8" side_tool="true" weight="0.3295129" />
+      <window_info anchor="right" id="Coverage" order="8" side_tool="true" weight="0.4780755" />
       <window_info anchor="right" id="Maven Projects" order="9" weight="0.1492192" />
       <window_info anchor="right" id="Event Log" order="10" weight="0.60208464" />
+      <window_info anchor="right" id="Maven" order="11" weight="0.32967034" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -575,6 +589,11 @@
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/zookeeperClient$TimeQueryServer.ic" NAME="TimeQueryServer Coverage Results" MODIFIED="1556332329787" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>cn.hadoop.zookeeper.distributesystem.*</FILTER>
+    </SUITE>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$MAVEN_REPOSITORY$/org/apache/zookeeper/zookeeper/3.4.13/zookeeper-3.4.13.pom" />
@@ -667,40 +686,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/hadoop/zookeeper/distributesystem/TimeQueryService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/hadoop/zookeeper/distributesystem/Consumer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-243">
-          <caret line="37" column="99" selection-start-line="37" selection-start-column="99" selection-end-line="37" selection-end-column="99" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/hadoop/zookeeper/TestDemo/Util/ZookeeperUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="406">
           <caret line="34" column="43" selection-start-line="34" selection-start-column="43" selection-end-line="34" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/hadoop/zookeeper/distributesystem/TimeQueryServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="11" column="28" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -714,20 +703,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/hadoop/zookeeper/TestDemo/Cilent/ZookeeperClientDemo.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/hadoop/zookeeper/TestDemo/WatchNode/ZookeeperWatchDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-103">
-          <caret line="33" column="59" selection-start-line="33" selection-start-column="59" selection-end-line="33" selection-end-column="59" />
+        <state>
+          <caret column="47" selection-start-column="47" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/hadoop/zookeeper/TestDemo/WatchNode/ZookeeperWatchDemo.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/hadoop/zookeeper/TestDemo/Cilent/ZookeeperClientDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1">
-          <caret column="47" lean-forward="true" selection-start-column="47" selection-end-column="47" />
+        <state relative-caret-position="594">
+          <caret line="33" column="59" selection-start-line="33" selection-start-column="59" selection-end-line="33" selection-end-column="59" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -736,10 +725,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/hadoop/zookeeper/TestDemo/WatchNode/MyWatcher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="29" column="73" selection-start-line="29" selection-start-column="73" selection-end-line="29" selection-end-column="73" />
+        <state relative-caret-position="594">
+          <caret line="25" column="69" selection-start-line="25" selection-start-column="69" selection-end-line="25" selection-end-column="69" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/hadoop/zookeeper/distributesystem/TimeQueryServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="26" column="13" lean-forward="true" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#TimeQueryServer#0;class#TimeQueryServer#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/hadoop/zookeeper/distributesystem/TimeQueryService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="580">
+          <caret line="25" column="41" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/hadoop/zookeeper/distributesystem/Consumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="56" column="14" selection-start-line="56" selection-start-column="14" selection-end-line="56" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#637#645#0" expanded="true" />
           </folding>
         </state>
       </provider>
